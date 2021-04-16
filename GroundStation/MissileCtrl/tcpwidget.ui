@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TCPWidget</class>
+ <widget class="QWidget" name="TCPWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TCPWidget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="labelPkgSpeed">
+     <property name="text">
+      <string>PkgSpeed:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QLabel" name="labelPkgNum">
+     <property name="text">
+      <string>PkgNum:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButtonCLRPkg">
+     <property name="text">
+      <string>CLR Pkg</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEditPort">
+     <property name="text">
+      <string>8000</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="labelDataSpeed">
+     <property name="text">
+      <string>DataSpeed:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" rowspan="5">
+    <widget class="QTextEdit" name="textEdit"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelIP">
+     <property name="text">
+      <string>IP:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEditIP">
+     <property name="text">
+      <string>192.168.4.1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="pushButtonConnect">
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="labelState">
+     <property name="text">
+      <string>Unconnected</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelPort">
+     <property name="text">
+      <string>Port:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QPushButton" name="pushButtonCLRText">
+     <property name="text">
+      <string>CLRText</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <widget class="QComboBox" name="comboBoxShow">
+     <item>
+      <property name="text">
+       <string>ShowNothing</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ShowPkgInfo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ShowPkgContent</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
